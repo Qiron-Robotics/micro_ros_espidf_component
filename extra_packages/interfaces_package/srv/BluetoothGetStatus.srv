@@ -1,0 +1,6 @@
+---
+bool        discoverable
+bool        pairable
+uint8       connected
+string[]    paired_ssids
+string[]    paired_macs 

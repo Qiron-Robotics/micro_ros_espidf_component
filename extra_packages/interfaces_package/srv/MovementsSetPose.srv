@@ -1,0 +1,6 @@
+Pose    positions
+float32 duration
+int8    version                 3
+bool    answer_on_conclusion    false
+---
+DefaultReturn ret 

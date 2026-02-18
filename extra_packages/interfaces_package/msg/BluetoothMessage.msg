@@ -1,0 +1,2 @@
+string message
+string src_mac

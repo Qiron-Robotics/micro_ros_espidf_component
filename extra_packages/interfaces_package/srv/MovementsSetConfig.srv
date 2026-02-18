@@ -1,0 +1,10 @@
+# Request
+uint8 id              # Motor ID
+float32 initial_pos   # Initial position
+float32 min_angle     # Minimum angle
+float32 max_angle     # Maximum angle
+float32 offset        # Position offset
+---
+# Response
+bool success          # Whether the configuration was successful
+string message        # Additional information about the operation
