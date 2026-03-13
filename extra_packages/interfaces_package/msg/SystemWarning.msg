@@ -1,7 +1,11 @@
-uint8           error_cod
+# Exemplos de dados Warnings do sistema
+# Joints not connected 
+# Bluetooth with error  
+# over temperature microcontroller 
+# under voltage battery
+# over voltage battery
+# under voltage motor
+# over voltage motor
 
-# bool0        ot_microcontroller 
-# bool1        uv_battery
-# bool2        ov_battery
-# bool3        uv_motor
-# bool4        ov_motor
+string  error_source
+string  error_type

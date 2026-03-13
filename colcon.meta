@@ -39,14 +39,14 @@
             "cmake-args": [
                 "-DRMW_UXRCE_USE_PSRAM=ON",
                 "-DRMW_UXRCE_TRANSPORT=custom",
-                "-DRMW_UXRCE_XML_BUFFER_LENGTH=400",
+                "-DRMW_UXRCE_XML_BUFFER_LENGTH=1200",
                 "-DRMW_UXRCE_MAX_NODES=1",
-                "-DRMW_UXRCE_MAX_PUBLISHERS=5",
-                "-DRMW_UXRCE_MAX_SUBSCRIPTIONS=3",
-                "-DRMW_UXRCE_MAX_SERVICES=20",
-                "-DRMW_UXRCE_MAX_CLIENTS=1",
-                "-DRMW_UXRCE_MAX_HISTORY=1",
-                "-DRMW_UXRCE_USE_STATIC_MEMORY=OFF",
+                "-DRMW_UXRCE_MAX_PUBLISHERS=3",
+                "-DRMW_UXRCE_MAX_SUBSCRIPTIONS=1",
+                "-DRMW_UXRCE_MAX_SERVICES=13",
+                "-DRMW_UXRCE_MAX_CLIENTS=2",
+                "-DRMW_UXRCE_MAX_HISTORY=10",
+                "-DRMW_UXRCE_USE_STATIC_MEMORY=ON",
                 "-DRMW_UXRCE_DYNAMIC_ALLOCATION=ON",
                 "-DRMW_UXRCE_ALLOCATE_MEMORY_FROM_HEAP=ON"
             ]

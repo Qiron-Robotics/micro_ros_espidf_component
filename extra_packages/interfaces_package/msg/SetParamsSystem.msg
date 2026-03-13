@@ -1,2 +1,0 @@
-float32 frequency_to_publish
-bool is_persistent

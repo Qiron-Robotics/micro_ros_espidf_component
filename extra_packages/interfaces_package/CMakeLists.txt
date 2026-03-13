@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.28)
+cmake_minimum_required(VERSION 3.8)
 project(interfaces_package)
 
 # Default to C99
@@ -34,34 +34,16 @@ endif()
 
 find_package(rosidl_default_generators REQUIRED)
 
-rosidl_generate_interfaces(${PROJECT_NAME}
-  
-  # Total de topicos ROS:
-  #   - Services:    12  
-  #   - Publishers:   3   
-  #   - Subscriber:   1   
+rosidl_generate_interfaces(${PROJECT_NAME}  
 
-  # 1 Publisher - Feedback 
-  # 1 Subscriber - Goal 
-  # 3 Services - Execução
-  "action/PlayMovement.action" 
-
+  # Messages
   "msg/DefaultReturn.msg"
   "msg/Pose.msg"
 
-  # 1 Subscriber 
-  "msg/BluetoothMessage.msg" 
-
-  # 1 Publisher 
-  "msg/SystemWarning.msg"
-
-  # 1 Publisher 
-  "msg/SystemInfo.msg"
-
-  # 3 Services 
-  "srv/BluetoothGetStatus.srv"
-  "srv/BluetoothSendCommand.srv"
-  "srv/BluetoothSendMessage.srv"
+  # 1 Publisher  - Feedback 
+  # 1 Subscriber - Goal 
+  # 3 Services   - Execução
+  "action/PlayMovement.action" 
   
   # 6 Services 
   "srv/MovementsSendCommand.srv"
@@ -71,18 +53,25 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/MovementsReadAddress.srv"
   "srv/MovementsWriteAddress.srv"
 
-  # Deprecated
-  # "msg/SetParamsSystem.msg"
-  # "srv/BluetoothConnections.srv"
-  # "srv/BluetoothDiscoverable.srv"
-  # "srv/BluetoothPairable.srv"
-  # "srv/BluetoothPairedDevices.srv"
-  # "srv/BluetoothService.srv"
-  # "srv/BluetoothUnpair.srv"
-  # "srv/MovementsPause.srv"
-  # "srv/MovementsReboot.srv"
-  # "srv/MovementsSetTorque.srv"
-  # "srv/MovementsSetConfig.srv"
+  # 1 Publisher 
+  "msg/BluetoothMessage.msg" 
+
+  # 3 Services 
+  "srv/BluetoothGetStatus.srv"
+  "srv/BluetoothSendCommand.srv"
+  "srv/BluetoothSendMessage.srv"
+
+  # 1 Publisher 
+  "msg/SystemWarning.msg"
+
+  # 1 Service 
+  "msg/SystemSendCommand.msg"
+
+  # Total de topicos ROS:
+  #   - Services:    13
+  #   - Publishers:   3   
+  #   - Subscriber:   1 
+
   )
 
 ament_package()
