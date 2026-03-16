@@ -65,7 +65,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/SystemWarning.msg"
 
   # 1 Service 
-  "msg/SystemSendCommand.msg"
+  "srv/SystemSendCommand.srv"
 
   # Total de topicos ROS:
   #   - Services:    13
