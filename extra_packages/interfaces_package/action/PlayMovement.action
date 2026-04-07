@@ -1,0 +1,7 @@
+float32[] durations 
+Pose[]    poses
+int8      version   3
+---
+DefaultReturn ret
+---
+float32 progress

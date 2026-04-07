@@ -1,0 +1,9 @@
+# Comandos permitidos:
+#   torque  [ "true", "false" ]
+#   zero    [ ]
+#   reboot  [ ]
+#   pause   [ ]
+string command
+string data 
+---
+DefaultReturn ret 
